@@ -26,6 +26,12 @@ declare namespace API {
     current?: number;
     pageSize?: number;
   };
+  type BaseResponse<T> = {
+    code: number;
+    data: T;
+    message: string;
+    description: string;
+  }
 
   type RuleListItem = {
     key?: number;
